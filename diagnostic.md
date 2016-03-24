@@ -30,7 +30,9 @@ Record your responses inside the fenced code blocks below each question.
     the syntax for loading this component inside that template?
 
     ```html
-    {{#}}
+    {{#each model as |contact|}}
+  {{contacts/my-contact contact=contact}}      
+    {{/each}}
     ```
 
     Each contact has multiple phone numbers. Suppose you also have '`my-phone`'
